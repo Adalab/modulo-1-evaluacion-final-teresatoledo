@@ -1,0 +1,32 @@
+.connect {
+    margin: 20px 37px 40px 37px;
+    &__p {
+        color: $color-orange;
+        font-size: 1.6rem;
+        font-family: $Roboto;
+    }
+    &__h2 {
+        color: $color-black;
+        font-size: 3.2rem;
+        font-family: $RobotoSlab;
+        text-transform: capitalize;
+        margin-top: 12px;
+    }
+    &__text {
+        color: $color-black;
+        font-size: 2.0rem;
+        font-family: $Roboto;
+        margin-top: 12px;
+    }
+    &__button {
+        color: $color-orange;
+        font-size: 2.0rem;
+        font-family: $Roboto;
+        margin-top: 30px;
+        border-radius: 22px;
+        border: solid 2px $color-orange;
+        background-color: $color-white;
+        width: 160px;
+        height: 45px;
+    }
+}
