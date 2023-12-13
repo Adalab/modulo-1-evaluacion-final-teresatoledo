@@ -1,0 +1,46 @@
+.footer {
+    background-color: $color-greyish;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 150px;
+    padding-top: 50px;
+
+    &__ul {
+        color: $color-white;
+        font-size: 1.4rem;
+        font-family: $Roboto;
+        list-style: none;
+        padding-right: 130px;
+        &--heart{
+            color: $color-orange;
+    }
+    }
+    &__list {
+        font-size: 1.6rem;
+        font-family: $Roboto;
+        list-style: none;
+        text-transform: uppercase;
+        padding-right: 130px;
+        &--li {
+            padding-bottom: 10px;
+        }
+        &--a {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+    &__link {
+        background-image: url(/images/ico-arrow.svg);
+        background-repeat: no-repeat;
+        background-color: $color-white;
+        background-position: center;
+        border-radius: 23px;
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        bottom: -680px;
+        left: 370px;
+    }
+}
