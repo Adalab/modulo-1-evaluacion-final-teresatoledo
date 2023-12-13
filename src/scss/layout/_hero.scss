@@ -4,12 +4,12 @@
     background-position: left;
     background-size: 150%;
     height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     text-align: center;
+    padding-bottom: 45px;
 }
 .hero__h1 {
     color: $color-white;
@@ -30,4 +30,5 @@
     height: 45px;
     background-color: $color-white;
     border-radius: 23px;
+    margin-top: 10px;
 }
