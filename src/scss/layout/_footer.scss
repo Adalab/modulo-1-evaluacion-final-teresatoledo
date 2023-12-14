@@ -11,6 +11,10 @@
         padding-left: 150px;
         padding-top: 50px;
     }
+    @media (min-width: 1200px) {
+        padding-bottom: 50px;
+        align-items: flex-start;
+    }
 
     &__ul {
         color: $color-white;
@@ -20,6 +24,7 @@
         order: 3;
         @media (min-width: 768px) {
             padding-right: 130px;
+            order: 1;
         }
         &--heart{
             color: $color-orange;
@@ -38,6 +43,9 @@
             padding-right: 130px;
             padding-bottom: 0px;
         }
+        @media (min-width: 1200px) {
+            align-items: flex-start;
+        }
         &--li {
             padding-bottom: 15px;
             @media (min-width: 768px) {
@@ -51,9 +59,15 @@
     }
     &__list1 {
         order: 1;
+        @media (min-width: 1200px) {
+            order: 2;
+        }
     }
     &__list2 {
         order: 2;
+        @media (min-width: 1200px) {
+            order: 3;
+        }
     }
     &__link {
         background-image: url(/images/ico-arrow.svg);
@@ -64,12 +78,14 @@
         width: 45px;
         height: 45px;
         position: absolute;
-        margin-bottom: 460px;
-        /*margin-bottom: 370px;
-        transform: translate(-50%, -100%);*/
+        margin-bottom: 470px;
         @media (min-width: 768px) {
-            left: 370px;
+            left: 380px;
             margin-bottom: 280px;
+        }
+        @media (min-width: 1200px) {
+            left: 590px;
+            margin-bottom: 230px;
         }
     }
 }

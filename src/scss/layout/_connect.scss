@@ -1,5 +1,8 @@
 .connect {
     margin: 20px 37px 40px 37px;
+    @media (min-width: 1200px) {
+        margin: 60px 200px;
+    }
     &__p {
         color: $color-orange;
         font-size: 1.4rem;
@@ -38,5 +41,8 @@
         background-color: $color-white;
         width: 160px;
         height: 45px;
+    }
+    &__button:hover  {
+        transform: translateX(20%) rotate(20deg);
     }
 }
