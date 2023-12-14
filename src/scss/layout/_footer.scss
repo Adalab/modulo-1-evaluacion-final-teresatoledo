@@ -1,35 +1,59 @@
 .footer {
     background-color: $color-greyish;
-    height: 230px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    padding-left: 150px;
-    padding-top: 50px;
+    align-items: center;
+    height: 465px;
+    @media (min-width: 768px) {
+        height: 230px;
+        flex-direction: row;
+        padding-left: 150px;
+        padding-top: 50px;
+    }
 
     &__ul {
         color: $color-white;
         font-size: 1.4rem;
         font-family: $Roboto;
         list-style: none;
-        padding-right: 130px;
+        order: 3;
+        @media (min-width: 768px) {
+            padding-right: 130px;
+        }
         &--heart{
             color: $color-orange;
     }
     }
     &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 1.6rem;
         font-family: $Roboto;
         list-style: none;
         text-transform: uppercase;
-        padding-right: 130px;
+        padding-bottom: 30px;
+        @media (min-width: 768px) {
+            padding-right: 130px;
+            padding-bottom: 0px;
+        }
         &--li {
-            padding-bottom: 10px;
+            padding-bottom: 15px;
+            @media (min-width: 768px) {
+                padding-bottom: 10px;
+            }
         }
         &--a {
             color: $color-white;
             text-decoration: none;
         }
+    }
+    &__list1 {
+        order: 1;
+    }
+    &__list2 {
+        order: 2;
     }
     &__link {
         background-image: url(/images/ico-arrow.svg);
@@ -40,7 +64,12 @@
         width: 45px;
         height: 45px;
         position: absolute;
-        bottom: -680px;
-        left: 370px;
+        margin-bottom: 460px;
+        /*margin-bottom: 370px;
+        transform: translate(-50%, -100%);*/
+        @media (min-width: 768px) {
+            left: 370px;
+            margin-bottom: 280px;
+        }
     }
 }
