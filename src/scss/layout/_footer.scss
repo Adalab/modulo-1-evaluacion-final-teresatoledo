@@ -4,12 +4,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
     height: 465px;
+    position: relative;
+    
     @media (min-width: 768px) {
         height: 230px;
         flex-direction: row;
-        padding-left: 150px;
-        padding-top: 50px;
+        gap: 120px;
     }
     @media (min-width: 1200px) {
         padding-bottom: 50px;
@@ -23,7 +25,6 @@
         list-style: none;
         order: 3;
         @media (min-width: 768px) {
-            padding-right: 130px;
             order: 1;
         }
         &--heart{
@@ -31,7 +32,7 @@
     }
     }
     &__list {
-        display: flex;
+        display: flex; /*Es necesario para poder tener el texto justificado en la versión móvil y alineado a la izquierda en la tablet.*/
         flex-direction: column;
         align-items: center;
         font-size: 1.6rem;
@@ -40,8 +41,8 @@
         text-transform: uppercase;
         padding-bottom: 30px;
         @media (min-width: 768px) {
-            padding-right: 130px;
             padding-bottom: 0px;
+            align-items: flex-start;
         }
         @media (min-width: 1200px) {
             align-items: flex-start;
@@ -78,14 +79,16 @@
         width: 45px;
         height: 45px;
         position: absolute;
-        margin-bottom: 470px;
-        @media (min-width: 768px) {
-            left: 380px;
-            margin-bottom: 280px;
-        }
-        @media (min-width: 1200px) {
-            left: 590px;
-            margin-bottom: 230px;
-        }
+        top: -22.5px;
+        margin: auto;
+        animation: 2s linear 0s infinite alternate link;
+    }
+}
+@keyframes link {
+    from {
+        transform: translateX(5vh);
+    }
+    to {
+        transform: translateX(-5vh);
     }
 }
