@@ -6,4 +6,8 @@
     width: 44px;
     height: 44px;
     position: fixed;
+    @media (max-width: 768px) {
+        width: 35px;
+        height: 35px;;
+    }
 }
