@@ -2,21 +2,31 @@
     margin: 20px 37px 40px 37px;
     &__p {
         color: $color-orange;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-family: $Roboto;
+        @media (min-width: 768px) {
+            font-size: 1.6rem;
+        }
     }
     &__h2 {
         color: $color-black;
-        font-size: 3.2rem;
+        font-size: 2.4rem;
         font-family: $RobotoSlab;
         text-transform: capitalize;
-        margin-top: 12px;
+        margin-top: 5px;
+        @media (min-width: 768px) {
+            font-size: 3.2rem;
+            margin-top: 12px;
+        }
     }
     &__text {
         color: $color-black;
-        font-size: 2.0rem;
+        font-size: 1.8rem;
         font-family: $Roboto;
         margin-top: 12px;
+        @media (min-width: 768px) {
+            font-size: 2.0rem;
+        }
     }
     &__button {
         color: $color-orange;
@@ -24,7 +34,7 @@
         font-family: $Roboto;
         margin-top: 30px;
         border-radius: 22px;
-        border: solid 2px $color-orange;
+        border: solid 3px $color-orange;
         background-color: $color-white;
         width: 160px;
         height: 45px;
